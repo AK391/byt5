@@ -5,5 +5,7 @@ article = "<p style='text-align: center'><a href='https://arxiv.org/abs/2105.136
 
 
 
-gr.Interface.load("huggingface/Narrativa/byt5-base-finetuned-tweet-qa", inputs=gr.inputs.Textbox(lines=5), description=description, article=article).launch()
+gr.Interface.load("huggingface/Narrativa/byt5-base-finetuned-tweet-qa", inputs=gr.inputs.Textbox(lines=5), description=description, article=article, examples=[
+  ["question: how far away was the putt context: GET THE CIGAR READY! Miguel aces the 15th from 174 yards, and celebrates as only he knows how! The European Tour (@EuropeanTour) January, 15 2015"]
+]).launch()
 
