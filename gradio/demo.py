@@ -5,5 +5,5 @@ article = "<p style='text-align: center'><a href='https://arxiv.org/abs/2105.136
 
 
 
-gr.Interface.load("huggingface/Narrativa/byt5-base-finetuned-tweet-qa", inputs=gr.inputs.Textbox(lines=5)).launch()
+gr.Interface.load("huggingface/Narrativa/byt5-base-finetuned-tweet-qa", inputs=gr.inputs.Textbox(lines=5), description=description, article=article).launch()
 
